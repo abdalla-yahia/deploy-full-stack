@@ -11,7 +11,8 @@ import * as EmailValidator from 'email-validator';
 import {config} from 'bluebird';
 
 const router: Router = Router();
-var bcrypt = require('bcryptjs');
+
+const bcrypt = require('bcryptjs');
 
 async function generatePassword(plainTextPassword: string): Promise<string> {
   const saltRounds = 10;
