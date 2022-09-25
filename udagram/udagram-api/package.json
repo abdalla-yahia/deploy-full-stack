@@ -13,7 +13,7 @@
     "deploy": "npm run build && eb init --region us-east-1 --platform Node.js && eb use udagramapi-env && eb deploy",
     "build0": "npm install && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install  && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && 7z a Archive.zip . && cd .."
+    "build": "npm install  && npm run clean && tsc && cp -rf src/config www/config && cp -rf .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && 7z a Archive.zip . && cd .."
   },
   "keywords": [],
   "author": "",
